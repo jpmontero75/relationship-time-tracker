@@ -2,6 +2,7 @@
   "name": "relationship-time-tracker",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://josepablomonteroc.github.io/relationship-time-tracker/",
   "type": "module",
   "scripts": {
     "dev": "vite",
