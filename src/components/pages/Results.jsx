@@ -26,7 +26,7 @@ export const Results = () => {
   };
 
   const handleReturn = () => {
-    navigate('/');
+    navigate('/relationship-time-tracker/');
   };
 
 

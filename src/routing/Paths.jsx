@@ -7,7 +7,7 @@ export const Paths = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Index />} />
+        <Route path="/relationship-time-tracker/" element={<Index />} />
         <Route path="/index" element={<Index />} />
         <Route path="/results" element={<Results />} />
       </Routes>
