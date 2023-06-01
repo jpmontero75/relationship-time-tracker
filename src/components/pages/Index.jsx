@@ -9,8 +9,8 @@ export const Index = () => {
     const navigate = useNavigate();
 
     const handleCalculate = () => {
-      const formattedDate = startDate.toISOString();
-      navigate(`/results?date=${formattedDate}`);
+        const formattedDate = startDate.toISOString();
+        navigate(`/results?date=${formattedDate}`);
     };
 
     return (
@@ -26,7 +26,10 @@ export const Index = () => {
                 onChange={(date) => setStartDate(date)}
                 dateFormat='dd-MM-yyyy'
                 showYearDropdown
+                showMonthDropdown
+                useShortMonthInDropdown
                 dropdownMode="select"
+                showPreviousMonths={false}
                 inline
             />
             <button className='btn-primary' onClick={handleCalculate}>Calculate</button>

@@ -61,12 +61,27 @@
   font-weight: bold;
 }
 
-.react-datepicker__year-select {
+/** Datepicker styles */
+.react-datepicker {
+  font-size: 1.2em;
+}
+
+.react-datepicker__year-select,
+.react-datepicker__month-select {
   background-color: #f0f0f0;
   color: black;
   border: 1px rgb(121, 121, 121) solid;
   font-size: 16px;
-  margin: 5px;
+  margin: 15px;
+}
+
+.react-datepicker__navigation {
+  display: none;
+}
+
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header{
+  font-size: 1.2em;
+  color: black;
 }
 
 .btn-primary {
