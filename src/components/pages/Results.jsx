@@ -29,7 +29,7 @@ export const Results = () => {
   };
 
   const handleReturn = () => {
-    navigate('/relationship-time-tracker/');
+    navigate('/');
   };
 
   useEffect(() => {
