@@ -9,19 +9,19 @@ export const Results = () => {
   const searchParams = new URLSearchParams(location.search);
   const formattedDate = searchParams.get('date');
 
-  const startDate = new Date(formattedDate);
+  const selectedDate = new Date(formattedDate);
   const currentDate = new Date();
 
-  const yearsDiff = currentDate.getFullYear() - startDate.getFullYear();
-  const monthsDiff = currentDate.getMonth() - startDate.getMonth();
+  const yearsDiff = currentDate.getFullYear() - selectedDate.getFullYear();
+  const monthsDiff = currentDate.getMonth() - selectedDate.getMonth();
   const totalMonths = yearsDiff * 12 + monthsDiff;
   const correctYearsDiff = Math.floor(totalMonths / 12);
   const correctMonthsDiff = totalMonths % 12;
 
-  const daysDiff = Math.floor((currentDate - startDate) / (1000 * 60 * 60 * 24));
-  const hoursDiff = Math.floor((currentDate - startDate) / (1000 * 60 * 60));
-  const minutesDiff = Math.floor((currentDate - startDate) / (1000 * 60));
-  const secondsDiff = Math.floor((currentDate - startDate) / 1000);
+  const daysDiff = Math.floor((currentDate - selectedDate) / (1000 * 60 * 60 * 24));
+  const hoursDiff = Math.floor((currentDate - selectedDate) / (1000 * 60 * 60));
+  const minutesDiff = Math.floor((currentDate - selectedDate) / (1000 * 60));
+  const secondsDiff = Math.floor((currentDate - selectedDate) / 1000);
 
   const formatDate = (date) => {
     const options = { month: 'long', day: 'numeric', year: 'numeric' };
