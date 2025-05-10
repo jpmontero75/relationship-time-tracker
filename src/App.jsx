@@ -1,13 +1,8 @@
-import './App.css'
-import { Paths } from './routing/Paths'
+import React from "react";
+import { PrimaryView } from "./Components/PrimaryView";
 
-function App() {
+const App = () => {
+  return <PrimaryView />;
+};
 
-  return (
-    <div className="content">
-      <Paths />
-    </div>
-  )
-}
-
-export default App
+export default App;
