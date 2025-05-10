@@ -21,7 +21,7 @@ export const PrimaryView = () => {
         ) : (
           <div className="bg-gray-100 shadow-lg rounded-lg p-6 w-full max-w-md sm:max-w-lg lg:max-w-xl">
             {/* Logo */}
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -38,18 +38,18 @@ export const PrimaryView = () => {
             </div>
 
             {/* Title */}
-            <h1 className="text-xl sm:text-2xl font-bold text-center text-gray-700 mb-4">
+            <h1 className="text-xl sm:text-2xl font-bold text-center text-gray-700 mb-2">
               Relationship Time Tracker
             </h1>
 
             {/* Subtitle */}
-            <h2 className="text-base sm:text-lg text-center text-gray-600 mb-6">
+            <h2 className="text-base sm:text-lg text-center text-gray-600 mb-2">
               Select your anniversary
             </h2>
 
             {/* Selected date */}
             <div className="mb-6 bg-gray-200 p-4 rounded-lg shadow-inner">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-700 text-center mb-2">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-700 text-center">
                 Selected Date
               </h3>
               <p className="text-lg sm:text-2xl font-bold text-red-400 text-center">
@@ -62,7 +62,7 @@ export const PrimaryView = () => {
             </div>
 
             {/* StaticDatePicker */}
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center">
               <StaticDatePicker
                 displayStaticWrapperAs="desktop"
                 value={startDate}
@@ -101,7 +101,7 @@ export const PrimaryView = () => {
                   fontWeight: "bold",
                 }}
                 onClick={() => setResultsView(true)}
-                className="w-full sm:w-[80%]"
+                className="w-[70%] sm:w-[50%]"
               >
                 Calculate
               </Button>
