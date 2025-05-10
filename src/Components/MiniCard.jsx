@@ -12,7 +12,9 @@ export const MiniCard = ({ icon, value, label }) => {
       </div>
 
       {/* Value */}
-      <p className="text-2xl font-bold text-gray-800">{formattedValue}</p>
+      <p className="text-xl sm:text-2xl font-bold text-gray-800 break-words overflow-hidden text-ellipsis max-w-full">
+        {formattedValue}
+      </p>
 
       {/* Label */}
       <p className="text-sm text-gray-600">{label}</p>
