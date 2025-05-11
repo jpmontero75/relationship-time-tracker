@@ -93,7 +93,7 @@ export const Results = ({ startDate, setStartDate, setResultsView }) => {
   return (
     <div
       ref={resultsRef}
-      className="bg-gray-100 shadow-lg rounded-lg p-6 w-full max-w-lg"
+      className="bg-gray-100 shadow-lg rounded-lg p-4 w-full max-w-lg"
     >
       <div className="relative">
         {/* Back Button */}
