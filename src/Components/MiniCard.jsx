@@ -5,7 +5,7 @@ export const MiniCard = ({ icon, value, label }) => {
   const formattedValue = new Intl.NumberFormat().format(value);
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 flex flex-col items-center justify-center text-center">
+    <div className="bg-white shadow-md rounded-lg py-4 flex flex-col items-center justify-center text-center">
       {/* Icon */}
       <div className="text-red-400 mb-4">
         {React.cloneElement(icon, { fontSize: "large", style: { fontSize: "2rem" } })}

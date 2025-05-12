@@ -158,12 +158,13 @@ export const Results = ({ startDate, setStartDate, setResultsView }) => {
         />
       </div>
 
-      {/* Footer 
+      {/* Share Button 
       <div className="mt-6 text-center">
         <Button
           sx={{ backgroundColor: "#F87171", fontWeight: "bold", width: "60%" }}
           variant="contained"
           endIcon={<IosShareIcon sx={{ fontSize: "2rem" }} />}
+          onClick={handleShareScreenshot}
         >
           Share
         </Button>
