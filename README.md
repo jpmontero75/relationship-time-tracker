@@ -23,7 +23,7 @@ This project utilizes the following technologies:
 
 To use the Relationship Time Tracker, follow these steps:
 
-1. Access the live application at [relationshiptimetracker.com](https://relationshiptimetrackercom).
+1. Access the live application at [relationshiptimetracker.com](https://relationshiptimetracker.com).
 
 2. On the homepage, select your anniversary date using the provided date picker.
 
